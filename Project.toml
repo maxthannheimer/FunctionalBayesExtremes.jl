@@ -1,13 +1,20 @@
 name = "FunctionalBayesExtremes"
 uuid = "d5bf9f5e-4818-497f-9f1b-418edfd156b8"
-authors = ["Max Thannheimer"]
 version = "1.0.0-DEV"
+authors = ["Max Thannheimer"]
+
+[deps]
+ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
+SafeTestsets = "1bc83da4-3b8d-516f-aca4-4fe02f6d838f"
 
 [compat]
-julia = "1.10.10"
+ForwardDiff = "1.3.2"
+SafeTestsets = "0.1.0"
+julia = "1.12.5"
 
 [extras]
+SafeTestsets = "1bc83da4-3b8d-516f-aca4-4fe02f6d838f"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [targets]
-test = ["Test"]
+test = ["Test", "SafeTestsets"]
